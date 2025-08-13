@@ -1,0 +1,102 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .form-container {
+      background: white;
+      padding: 20px;   /* Box Model - padding inside box */
+      border: 2px solid #ccc; /* Box Model - border */
+      border-radius: 10px;
+      width: 300px;    /* Box Model - content width */
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box; /* include padding in total width */
+    }
+    .gender-options, .course-options {
+      margin-top: 5px;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 15px;
+    }
+    button {
+      padding: 8px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button[type="reset"] {
+      background-color: #f44336;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Age:</label>
+      <input type="number" name="age" required>
+
+      <label>Branch:</label>
+      <input type="text" name="branch" required>
+
+      <label>Year:</label>
+      <input type="text" name="year" required>
+
+      <label>Specialization:</label>
+      <input type="text" name="specialization" required>
+
+      <label>Gender:</label>
+      <div class="gender-options">
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+      </div>
+
+      <label>Course Offered:</label>
+      <div class="course-options">
+        <input type="checkbox" name="course" value="TypeScript"> TypeScript<br>
+        <input type="checkbox" name="course" value="Python"> Python<br>
+        <input type="checkbox" name="course" value="MySQL"> MySQL<br>
+        <input type="checkbox" name="course" value="Project Management"> Project Management
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
